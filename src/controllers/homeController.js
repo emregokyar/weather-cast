@@ -121,7 +121,6 @@ export const searchWeather = async (req, res) => {
     }
 };
 
-
 // Creating daily info
 function getDailyInfo(dailyData, timeZone) {
     const dailySendingData = [];

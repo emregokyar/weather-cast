@@ -3,6 +3,8 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 import homeRoute from "./src/routes/home.js";
+import aboutRoute from "./src/routes/about.js";
+
 
 // Setting up __dirname variable 
 const __filename = fileURLToPath(import.meta.url);
@@ -22,6 +24,7 @@ app.use(express.json());
 
 // Routes
 app.use("/", homeRoute);
+app.use("/", aboutRoute);
 
 // Running App
 app.listen(PORT, () => {
