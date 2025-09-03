@@ -8,18 +8,22 @@
       </a>
       <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
         <li>
-          <a href="#" class="nav-link px-2 text-secondary">Home</a>
+          <a href="/" class="nav-link px-2 text-secondary">Home</a>
         </li>
     
         <li>
           <a href="#" class="nav-link px-2 text-white">About</a>
         </li>
       </ul>
-      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-        <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search" method="post" action="/search">
+        <input name="city" type="text" class="form-control form-control-dark text-bg-dark form-control basicAutoComplete" placeholder="Search..." aria-label="Search" >
       </form>
       <div class="text-end" bis_skin_checked="1">
-        <button type="button" class="btn btn-outline-light me-2">Search</button>
+        <button type="button" class="btn btn-outline-light me-2" id="current">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+          </svg>
+        </button>
       </div>
     </div>
   </div>
